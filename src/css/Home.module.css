@@ -1,0 +1,237 @@
+/* Home.module.css */
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    background: #F2F2F2;
+
+}
+
+.text-green-300 {
+    color: #50BE87 !important;
+}
+
+.bg-green {
+    background-color: #50BE87 !important;
+}
+
+.badge {
+    background-color: #50BE87;
+    color: black;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    background-color: #171717;
+}
+
+.search input {
+    outline: none;
+    /* Retire l'effet de contour bleu sur le focus */
+}
+
+.search input:focus {
+    border: none;
+    /* Retire la bordure lorsque l'input est en focus */
+    outline: none;
+    /* Assure que l'outline est aussi désactivé */
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.search {
+    padding: 8px;
+    width: 25vh;
+    border-radius: 40px;
+    font-size: 15px;
+    background-color: #eaeaea;
+    display: flex;
+}
+
+.search input {
+    background-color: #eaeaea;
+    width: 80%;
+    color: #171717;
+    padding-left: 10px;
+}
+
+.main {
+    padding: 20px 0;
+}
+
+.dateSection {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    width: 85%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.dateSection .text-enabled {
+    color: #50BE87 !important;
+}
+.dateBox,
+.dateBoxToday {
+    padding: 10px;
+    text-align: center;
+}
+
+.dateBoxToday {
+    border-bottom: 5px solid #50BE87;
+    width: 20%;
+}
+
+.topSection {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    width: 85%;
+    background: #D9D9D9;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.matchBox,
+.liveBox,
+.reviewBox {
+    padding: 20px;
+    text-align: center;
+    width: 45%;
+}
+
+.newsSection {
+    display: flex;
+    margin-bottom: 20px;
+    width: 85%;
+}
+
+.imageMainArticle {
+    height: 400px !important;
+    background-color: gray;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.mainArticle {
+    width: 70%;
+    margin-right: 20px;
+}
+
+.mainArticle div:nth-child(2) {
+    background: #D9D9D9;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.mainArticle img {
+    width: 100%;
+}
+
+.sideArticles {
+    width: 30%;
+    height: 100%;
+}
+
+.storiesSection {
+    margin-bottom: 20px;
+    width: 85%;
+}
+
+/* Conteneur du carrousel */
+.stories {
+    display: flex;
+    overflow-x: auto;
+    /* Activer le scroll horizontal */
+    white-space: nowrap;
+    /* Empêcher les éléments de passer à la ligne */
+    scroll-snap-type: x mandatory;
+    /* Pour un effet de "snap" lors du scroll */
+    -webkit-overflow-scrolling: touch;
+    /* Améliorer l'expérience sur mobile */
+}
+
+/* Style pour chaque story */
+.story {
+    min-width: 200px;
+    /* Largeur minimale pour chaque élément du carrousel */
+    margin-right: 10px;
+    padding: 20px;
+    /* background-color: #f5f5f5; */
+    border-radius: 10px;
+    scroll-snap-align: center;
+    /* Faire en sorte que chaque story s'aligne au centre au scroll */
+    flex-shrink: 0;
+    /* Empêcher les éléments de rétrécir */
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+}
+
+/* Optionnel : cacher les barres de défilement pour une expérience plus propre */
+.stories::-webkit-scrollbar {
+    display: none;
+}
+
+
+.euroSection {
+    width: 85%;
+
+}
+
+.competitions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.matchSection {
+    text-align: center;
+}
+
+.match {
+    background: #D9D9D9;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+/* Conteneur de la grille */
+.gridContainer {
+    display: grid; /* Active CSS Grid */
+    grid-template-columns: repeat(3, 1fr); /* Crée 3 colonnes égales */
+    gap: 20px; /* Espace entre les éléments */
+    width: 85%;
+  }
+  
+  /* Style pour chaque élément de la grille */
+  .gridItem {
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .image_grid {
+
+  }
+  .container_image_grid {
+    background: #000000;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
